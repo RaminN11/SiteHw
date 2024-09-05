@@ -7,7 +7,7 @@
 }
 
 body {
-    
+    background: white;
     scroll-behavior: smooth;
 }
 button {
@@ -36,6 +36,9 @@ h1, h2 {
     background: rgb(34, 34, 34);
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
    
     
 }
@@ -62,7 +65,7 @@ h1, h2 {
 }
 .mainContent {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: -1px;
     
@@ -85,7 +88,7 @@ h1, h2 {
     font-weight: 900;
     font-size: 48px;
 }
-.colorFon {
+.colorFonCard {
     background: white;
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +115,8 @@ h1, h2 {
     font-weight: 400;
     font-size: 16px;
     color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
 }
 .cardText h3 {
     font-size: 24px;
@@ -175,7 +180,7 @@ footer {
     justify-content: center;
 }
 .footerText h2 {
-    color: rgb(159, 159, 159);
+    color: #5D5D5D;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -218,10 +223,10 @@ footer {
     padding: 24px 16px;
 }
 .footerBtn {
-    margin-top: 100px;
+    margin-top: 48px;
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
    
 }
 .footerButton {
@@ -245,4 +250,101 @@ footer {
     align-items: flex-start;
     gap: 16;
     padding: 18px 20px;
+}
+
+@media(min-width: 768px) and (max-width: 1140px) {
+    .container {
+        max-width: 736px;
+    }
+    .header__rightSide {
+        gap: 25px;
+    }
+    .mainContent {
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .mainContent__leftSide { 
+        min-width: 386px;
+    }
+    .mainContent__rightSide {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 311px;
+        margin-right: 31px;
+        margin-top: 138px;
+        margin-bottom: 138px;
+        margin-left: 39px;
+    }
+    .mainContent__rightSide h1 {
+        font-size: 44px;
+    }
+    .mainContent__rightSide h2 {
+        font-size: 24px;
+    }
+    .mainContent__rightSide span {
+        font-size: 24px;
+    }
+    .colorFonCard {
+        gap: 20px;
+    }
+    .cardPhotoFirst {
+        background: url(.//img/Layer\ 43.png);
+        width: 232.04px;
+        height: 167px;
+    }
+    .cardBackgroundFirst {
+        background: url(.//img/Rectangle\ 22.png);
+        width: 232.04px;
+        height: 167px; 
+    }
+    .cardPhotoSecond {
+        background: url(.//img/layer44.png);
+        width: 232.04px;
+        height: 167px;
+    }
+    .cardBackgroundSecond {
+        background: url(.//img/Rectangle\ 22.png);
+        width: 232.04px;
+        height: 167px;
+    }
+    .cardPhotoThird {
+        background: url(.//img/layer45.png);
+        width: 232.04px;
+        height: 167px;
+    }
+    .cardBackgroundThird {
+        background: url(.//img/Rectangle\ 22.png);
+        width: 232.04px;
+        height: 167px;
+    }
+    .cardBigPhoto {
+        background: url(.//img/layer46.png);
+        width: 734.58px;
+        height: 116px;
+    }
+    .cardBigBackground {
+        background: url(.//img/Rectangle\ 23.png);
+        width: 734.58px;
+        height: 116px;
+    }
+    
+    .footerText {
+        margin-top: 109px;
+        margin-bottom: 93px;
+    }
+
+    .cardList {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 16px;
+    }
+
+    .footerText h2 {
+        font-weight: 300;
+    }
+    .footerBtn {
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
 }
