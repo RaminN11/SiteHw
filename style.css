@@ -36,11 +36,7 @@ h1, h2 {
     background: rgb(34, 34, 34);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-left: 32px;
-    padding-right: 32px;
-   
-    
+    justify-content: center;   
 }
 .header__leftSide {
     display: flex;
@@ -54,6 +50,13 @@ h1, h2 {
     justify-content: end;
     gap: 33px;
     cursor: pointer; 
+    
+}
+.header__rightSide button {
+    padding: 0; border: 0;
+}
+.header__leftSide button {
+    padding: 0; border: 0;
 }
 .pinkWord {
     color: rgb(241, 109, 127);
@@ -347,4 +350,104 @@ footer {
         margin-top: 32px;
         margin-bottom: 64px;
     }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 343px;
+    }
+
+    .header__leftSide {
+        padding: 18px; 
+    }
+    .hidden_btn {
+        display: none;
+    }
+
+    .mainContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -1px;   
+    }
+    
+    .mainContent__leftSide {
+        display: none;
+    }
+    .mainContent__rightSide {
+        padding-left: 15px;
+        margin: 148px 56px;
+    }
+    
+    .mainContent__rightSide h1 {
+        font-size: 38px;
+    }
+    .mainContent__rightSide h2 {
+        font-size: 20px;
+    }
+    .mainContent__rightSide span {
+        font-size: 20px;
+    }
+
+    .colorFonCard {
+        gap: 32px;
+    }
+    .cardPhotoFirst {
+        width: 343px;
+        height: 247px;
+    }
+    .cardBackgroundFirst {
+        width: 343px;
+        height: 247px; 
+    }
+    .cardPhotoSecond {
+        width: 343px;
+        height: 247px; 
+    }
+    .cardBackgroundSecond {
+        width: 343px;
+        height: 247px; 
+    }
+    .cardPhotoThird {
+        width: 343px;
+        height: 247px; 
+    }
+    .cardBackgroundThird {
+        width: 343px;
+        height: 247px; 
+    }
+    .cardBigPhoto {
+        width: 343px;
+        height: 111px;
+    }
+    .cardBigBackground {
+        width: 343px;
+        height: 111px;
+    }
+    .footerText {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .cardList {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .card h1 {
+        gap: 12px;
+        padding: 25px 18px;
+    }
+    .card h2 {
+        font-weight: 400;
+        gap: 12;
+    }
+    .footerBtn {
+        margin-top: 40px;
+        margin-bottom: 96px;
+       
+    }
+    
 }
